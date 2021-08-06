@@ -1,0 +1,56 @@
+body {
+    margin:50px;
+}
+
+.bio {
+    color: black;
+    font-size: 80%;
+    padding: 20px;
+    line-height: 1.6;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+    background-color: seashell;
+    line-height: 1.6;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px 220px 220px;
+    grid-template-areas:    
+        '....... header header'
+        'sidebar content content'
+        'footer footer footer';
+    background-color: rgb(5, 159, 197);
+    border-radius: 10px;
+    padding: 12px;
+    
+}
+
+.box {
+    background-color: 0000ff;
+    color: black;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 150%;
+}
+
+.header, 
+.footer {
+    background-color: #999;
+}
